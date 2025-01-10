@@ -1,0 +1,2147 @@
+{
+  "version": 3,
+  "sources": [
+    "../../votte/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmBA;;;AACQ;;AAAa;AAAb;AACA;;AAAmB;AAAnB;AACA;;AAAmB;AAAnB;AACA;;AAAe;AAAf;AACA;;AAAe;AAAf;AACA;;AAAe;AAAf;AACA;;AAAe;AAAf;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;;AAAoB;AAApB;AACA;;AAAgB;AAAhB;AACA;;AAAc;AAAd;AACA;;AAAmB;AAAnB;;AA9BR;;;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;AAAA;AAAA;AAiCK;;AAAA;AAAA;AAAA;;AAAA;AAjCL;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;AAiCK;;;AAAA;AAAA;AAoBA;;AAAA;AAAA;AAAA;;AAAA;AArDL;;;AAAA;AAqDK;;;AAAA;AAAA;AAqBA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AA1EL;;AAAA;;;;;;;;;AAAA;AAAA;AAiCA;;;AAEe;AAAA;;AAAA;AAAA;AAAA;AAAP;AACO;;AAAa;;AAAb;AAAA;;;AAAmB;;AAAa;;AAAb;AAAnB;;;;;;;;AAAP;AACO;;AAAA;;AAAA;AAAP;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;AAAoB;AAApB;AACA;;AAAoB;AAApB;AACA;;AAAgB;;AAAhB;AACA;;AAAA;;AAAA;AACA;;AAAmB;AAAnB;;AAER;;;AAEe;;AAA0B;AAAA;;AAAA;AAAA;AAA1B;AAAP;AACO;;AAA0B;AAAA;;AAAA;AAAA;AAA1B;AAAP;AACO;;AAAQ;AAAR;AAAA;;;AAAsB;AAAA;;AAAA;AAAA;AAAR;;AAAA;AAAd;;;;;;;;AAAP;AAEkC;;AAAtB;AAAA;;AAAA;AAAA;;AACL;AAAP;AACgB;;AAAhB;;AAAA;;AAAA;AACA;;AAAA;;;;;;;;;;;;AAUQ;AARA;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;;;;AAEA;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;;;;AAEA;AAAA;AAAA;AAAA;AAAqB;AAArB;AAAA;AAAA;AAAA;;;;AAEA;AAAA;;AAAA;AAAA;AAAqB;AAArB;AAAA;;AAAA;AAAA;;;;AAEA;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "smart_contracts.votte.contract.Voting.approval_program",
+      "params": {},
+      "block": "smart_contracts.votte.contract.Voting.approval_program",
+      "stack_in": [],
+      "op": "intcblock 0 1"
+    },
+    "5": {
+      "op": "bytecblock \"\" \"option1Votes\" \"option2Votes\" \"option3Votes\" \"option4Votes\" \"noOfOptions\" \"startsAt\" \"endsAt\" \"vote_status\" \"title\" \"description\" \"option1\" \"option2\" \"option3\" \"option4\" \"localState\""
+    },
+    "161": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "163": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "166": {
+      "callsub": "smart_contracts.votte.contract.Voting.__init__",
+      "op": "callsub __init__"
+    },
+    "169": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "callsub": "smart_contracts.votte.contract.Voting.__puya_arc4_router__",
+      "op": "callsub __puya_arc4_router__",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "172": {
+      "op": "return",
+      "stack_out": []
+    },
+    "173": {
+      "subroutine": "smart_contracts.votte.contract.Voting.__init__",
+      "params": {},
+      "block": "__init__",
+      "stack_in": [],
+      "op": "proto 0 0"
+    },
+    "176": {
+      "op": "bytec 9 // \"title\"",
+      "defined_out": [
+        "\"title\""
+      ],
+      "stack_out": [
+        "\"title\""
+      ]
+    },
+    "178": {
+      "op": "bytec_0 // \"\"",
+      "defined_out": [
+        "\"\"",
+        "\"title\""
+      ],
+      "stack_out": [
+        "\"title\"",
+        "\"\""
+      ]
+    },
+    "179": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "180": {
+      "op": "bytec 10 // \"description\"",
+      "defined_out": [
+        "\"description\""
+      ],
+      "stack_out": [
+        "\"description\""
+      ]
+    },
+    "182": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"description\"",
+        "\"\""
+      ]
+    },
+    "183": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "184": {
+      "op": "bytec 5 // \"noOfOptions\"",
+      "defined_out": [
+        "\"noOfOptions\""
+      ],
+      "stack_out": [
+        "\"noOfOptions\""
+      ]
+    },
+    "186": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"noOfOptions\"",
+        "0"
+      ]
+    },
+    "187": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "188": {
+      "op": "bytec 11 // \"option1\"",
+      "defined_out": [
+        "\"option1\""
+      ],
+      "stack_out": [
+        "\"option1\""
+      ]
+    },
+    "190": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option1\"",
+        "\"\""
+      ]
+    },
+    "191": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "192": {
+      "op": "bytec 12 // \"option2\"",
+      "defined_out": [
+        "\"option2\""
+      ],
+      "stack_out": [
+        "\"option2\""
+      ]
+    },
+    "194": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option2\"",
+        "\"\""
+      ]
+    },
+    "195": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "196": {
+      "op": "bytec 13 // \"option3\"",
+      "defined_out": [
+        "\"option3\""
+      ],
+      "stack_out": [
+        "\"option3\""
+      ]
+    },
+    "198": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option3\"",
+        "\"\""
+      ]
+    },
+    "199": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "200": {
+      "op": "bytec 14 // \"option4\"",
+      "defined_out": [
+        "\"option4\""
+      ],
+      "stack_out": [
+        "\"option4\""
+      ]
+    },
+    "202": {
+      "op": "bytec_0 // \"\"",
+      "stack_out": [
+        "\"option4\"",
+        "\"\""
+      ]
+    },
+    "203": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "204": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "defined_out": [
+        "\"option1Votes\""
+      ],
+      "stack_out": [
+        "\"option1Votes\""
+      ]
+    },
+    "205": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option1Votes\"",
+        "0"
+      ]
+    },
+    "206": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "207": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "defined_out": [
+        "\"option2Votes\""
+      ],
+      "stack_out": [
+        "\"option2Votes\""
+      ]
+    },
+    "208": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option2Votes\"",
+        "0"
+      ]
+    },
+    "209": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "210": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "defined_out": [
+        "\"option3Votes\""
+      ],
+      "stack_out": [
+        "\"option3Votes\""
+      ]
+    },
+    "211": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option3Votes\"",
+        "0"
+      ]
+    },
+    "212": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "213": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "defined_out": [
+        "\"option4Votes\""
+      ],
+      "stack_out": [
+        "\"option4Votes\""
+      ]
+    },
+    "215": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option4Votes\"",
+        "0"
+      ]
+    },
+    "216": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "217": {
+      "op": "bytec 6 // \"startsAt\"",
+      "defined_out": [
+        "\"startsAt\""
+      ],
+      "stack_out": [
+        "\"startsAt\""
+      ]
+    },
+    "219": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"startsAt\"",
+        "0"
+      ]
+    },
+    "220": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "221": {
+      "op": "bytec 7 // \"endsAt\"",
+      "defined_out": [
+        "\"endsAt\""
+      ],
+      "stack_out": [
+        "\"endsAt\""
+      ]
+    },
+    "223": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"endsAt\"",
+        "0"
+      ]
+    },
+    "224": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "225": {
+      "op": "bytec 8 // \"vote_status\"",
+      "defined_out": [
+        "\"vote_status\""
+      ],
+      "stack_out": [
+        "\"vote_status\""
+      ]
+    },
+    "227": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"vote_status\"",
+        "0"
+      ]
+    },
+    "228": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "229": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "230": {
+      "subroutine": "smart_contracts.votte.contract.Voting.__puya_arc4_router__",
+      "params": {},
+      "block": "__puya_arc4_router__",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "233": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "235": {
+      "op": "bz __puya_arc4_router___bare_routing@7",
+      "stack_out": []
+    },
+    "238": {
+      "op": "pushbytess 0x2916b6e9 0x31d5c300 0x30c6d58a // method \"create_vote(string,string,uint64,string,string,string,string,uint64)void\", method \"vote(uint64)void\", method \"opt_in()void\""
+    },
+    "255": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(create_vote(string,string,uint64,string,string,string,string,uint64)void)",
+        "Method(opt_in()void)",
+        "Method(vote(uint64)void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(create_vote(string,string,uint64,string,string,string,string,uint64)void)",
+        "Method(vote(uint64)void)",
+        "Method(opt_in()void)",
+        "tmp%2#0"
+      ]
+    },
+    "258": {
+      "op": "match __puya_arc4_router___create_vote_route@2 __puya_arc4_router___vote_route@3 __puya_arc4_router___opt_in_route@4",
+      "stack_out": []
+    },
+    "266": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "267": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "268": {
+      "block": "__puya_arc4_router___create_vote_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "270": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "271": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "272": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "274": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "275": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "278": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "281": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "284": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "287": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%11#0"
+      ]
+    },
+    "290": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0"
+      ]
+    },
+    "291": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "294": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0"
+      ]
+    },
+    "297": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0"
+      ]
+    },
+    "300": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0"
+      ]
+    },
+    "303": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%17#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%17#0"
+      ]
+    },
+    "306": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0"
+      ]
+    },
+    "309": {
+      "op": "txna ApplicationArgs 7",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%19#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%19#0"
+      ]
+    },
+    "312": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%20#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%20#0"
+      ]
+    },
+    "315": {
+      "op": "txna ApplicationArgs 8",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%20#0",
+        "tmp%21#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%20#0",
+        "tmp%21#0"
+      ]
+    },
+    "318": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%20#0",
+        "tmp%22#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%20#0",
+        "tmp%22#0"
+      ]
+    },
+    "319": {
+      "callsub": "smart_contracts.votte.contract.Voting.create_vote",
+      "op": "callsub create_vote",
+      "stack_out": []
+    },
+    "322": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "323": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "324": {
+      "block": "__puya_arc4_router___vote_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "326": {
+      "op": "!",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "327": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "328": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%25#0"
+      ]
+    },
+    "330": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "331": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%27#0"
+      ]
+    },
+    "334": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "335": {
+      "callsub": "smart_contracts.votte.contract.Voting.vote",
+      "op": "callsub vote",
+      "stack_out": []
+    },
+    "338": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "339": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "340": {
+      "block": "__puya_arc4_router___opt_in_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "342": {
+      "op": "intc_1 // OptIn",
+      "defined_out": [
+        "OptIn",
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0",
+        "OptIn"
+      ]
+    },
+    "343": {
+      "op": "==",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "344": {
+      "error": "OnCompletion is not OptIn",
+      "op": "assert // OnCompletion is not OptIn",
+      "stack_out": []
+    },
+    "345": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "347": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "348": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "349": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "350": {
+      "block": "__puya_arc4_router___bare_routing@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%33#0"
+      ]
+    },
+    "352": {
+      "op": "bnz __puya_arc4_router___after_if_else@11",
+      "stack_out": []
+    },
+    "355": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%34#0"
+      ]
+    },
+    "357": {
+      "op": "!",
+      "defined_out": [
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%35#0"
+      ]
+    },
+    "358": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "359": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "360": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "361": {
+      "block": "__puya_arc4_router___after_if_else@11",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "362": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "363": {
+      "subroutine": "smart_contracts.votte.contract.Voting.create_vote",
+      "params": {
+        "title#0": "bytes",
+        "description#0": "bytes",
+        "noOfOptions#0": "uint64",
+        "option1#0": "bytes",
+        "option2#0": "bytes",
+        "option3#0": "bytes",
+        "option4#0": "bytes",
+        "endsAt#0": "uint64"
+      },
+      "block": "create_vote",
+      "stack_in": [],
+      "op": "proto 8 0"
+    },
+    "366": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "367": {
+      "op": "bytec 8 // \"vote_status\"",
+      "defined_out": [
+        "\"vote_status\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"vote_status\""
+      ]
+    },
+    "369": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "370": {
+      "error": "check self.vote_status exists",
+      "op": "assert // check self.vote_status exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "371": {
+      "op": "!",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "372": {
+      "error": "Vote already created",
+      "op": "assert // Vote already created",
+      "stack_out": []
+    },
+    "373": {
+      "op": "frame_dig -6",
+      "defined_out": [
+        "noOfOptions#0 (copy)"
+      ],
+      "stack_out": [
+        "noOfOptions#0 (copy)"
+      ]
+    },
+    "375": {
+      "op": "pushint 2 // 2",
+      "defined_out": [
+        "2",
+        "noOfOptions#0 (copy)"
+      ],
+      "stack_out": [
+        "noOfOptions#0 (copy)",
+        "2"
+      ]
+    },
+    "377": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "378": {
+      "op": "bz create_vote_bool_false@3",
+      "stack_out": []
+    },
+    "381": {
+      "op": "frame_dig -6",
+      "stack_out": [
+        "noOfOptions#0 (copy)"
+      ]
+    },
+    "383": {
+      "op": "pushint 4 // 4",
+      "defined_out": [
+        "4",
+        "noOfOptions#0 (copy)"
+      ],
+      "stack_out": [
+        "noOfOptions#0 (copy)",
+        "4"
+      ]
+    },
+    "385": {
+      "op": "<=",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "386": {
+      "op": "bz create_vote_bool_false@3",
+      "stack_out": []
+    },
+    "389": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "and_result%0#0"
+      ]
+    },
+    "390": {
+      "op": "b create_vote_bool_merge@4"
+    },
+    "393": {
+      "block": "create_vote_bool_false@3",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "and_result%0#0"
+      ]
+    },
+    "394": {
+      "block": "create_vote_bool_merge@4",
+      "stack_in": [
+        "and_result%0#0"
+      ],
+      "error": "Number of options should be between 2 and 4",
+      "op": "assert // Number of options should be between 2 and 4",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "395": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "397": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "endsAt#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "endsAt#0 (copy)"
+      ]
+    },
+    "399": {
+      "op": "<",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "400": {
+      "error": "Invalid end time",
+      "op": "assert // Invalid end time",
+      "stack_out": []
+    },
+    "401": {
+      "op": "bytec 9 // \"title\"",
+      "defined_out": [
+        "\"title\""
+      ],
+      "stack_out": [
+        "\"title\""
+      ]
+    },
+    "403": {
+      "op": "frame_dig -8",
+      "defined_out": [
+        "\"title\"",
+        "title#0 (copy)"
+      ],
+      "stack_out": [
+        "\"title\"",
+        "title#0 (copy)"
+      ]
+    },
+    "405": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "406": {
+      "op": "bytec 10 // \"description\"",
+      "defined_out": [
+        "\"description\""
+      ],
+      "stack_out": [
+        "\"description\""
+      ]
+    },
+    "408": {
+      "op": "frame_dig -7",
+      "defined_out": [
+        "\"description\"",
+        "description#0 (copy)"
+      ],
+      "stack_out": [
+        "\"description\"",
+        "description#0 (copy)"
+      ]
+    },
+    "410": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "411": {
+      "op": "bytec 5 // \"noOfOptions\"",
+      "defined_out": [
+        "\"noOfOptions\""
+      ],
+      "stack_out": [
+        "\"noOfOptions\""
+      ]
+    },
+    "413": {
+      "op": "frame_dig -6",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "noOfOptions#0 (copy)"
+      ],
+      "stack_out": [
+        "\"noOfOptions\"",
+        "noOfOptions#0 (copy)"
+      ]
+    },
+    "415": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "416": {
+      "op": "bytec 11 // \"option1\"",
+      "defined_out": [
+        "\"option1\""
+      ],
+      "stack_out": [
+        "\"option1\""
+      ]
+    },
+    "418": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "\"option1\"",
+        "option1#0 (copy)"
+      ],
+      "stack_out": [
+        "\"option1\"",
+        "option1#0 (copy)"
+      ]
+    },
+    "420": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "421": {
+      "op": "bytec 12 // \"option2\"",
+      "defined_out": [
+        "\"option2\""
+      ],
+      "stack_out": [
+        "\"option2\""
+      ]
+    },
+    "423": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"option2\"",
+        "option2#0 (copy)"
+      ],
+      "stack_out": [
+        "\"option2\"",
+        "option2#0 (copy)"
+      ]
+    },
+    "425": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "426": {
+      "op": "bytec 13 // \"option3\"",
+      "defined_out": [
+        "\"option3\""
+      ],
+      "stack_out": [
+        "\"option3\""
+      ]
+    },
+    "428": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"option3\"",
+        "option3#0 (copy)"
+      ],
+      "stack_out": [
+        "\"option3\"",
+        "option3#0 (copy)"
+      ]
+    },
+    "430": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "431": {
+      "op": "bytec 14 // \"option4\"",
+      "defined_out": [
+        "\"option4\""
+      ],
+      "stack_out": [
+        "\"option4\""
+      ]
+    },
+    "433": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"option4\"",
+        "option4#0 (copy)"
+      ],
+      "stack_out": [
+        "\"option4\"",
+        "option4#0 (copy)"
+      ]
+    },
+    "435": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "436": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "defined_out": [
+        "\"option1Votes\""
+      ],
+      "stack_out": [
+        "\"option1Votes\""
+      ]
+    },
+    "437": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"option1Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"option1Votes\"",
+        "0"
+      ]
+    },
+    "438": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "439": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "defined_out": [
+        "\"option2Votes\""
+      ],
+      "stack_out": [
+        "\"option2Votes\""
+      ]
+    },
+    "440": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option2Votes\"",
+        "0"
+      ]
+    },
+    "441": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "442": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "defined_out": [
+        "\"option3Votes\""
+      ],
+      "stack_out": [
+        "\"option3Votes\""
+      ]
+    },
+    "443": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option3Votes\"",
+        "0"
+      ]
+    },
+    "444": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "445": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "defined_out": [
+        "\"option4Votes\""
+      ],
+      "stack_out": [
+        "\"option4Votes\""
+      ]
+    },
+    "447": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"option4Votes\"",
+        "0"
+      ]
+    },
+    "448": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "449": {
+      "op": "bytec 6 // \"startsAt\""
+    },
+    "451": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"startsAt\"",
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "\"startsAt\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "453": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "454": {
+      "op": "bytec 7 // \"endsAt\"",
+      "defined_out": [
+        "\"endsAt\""
+      ],
+      "stack_out": [
+        "\"endsAt\""
+      ]
+    },
+    "456": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "\"endsAt\"",
+        "endsAt#0 (copy)"
+      ]
+    },
+    "458": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "459": {
+      "op": "bytec 8 // \"vote_status\"",
+      "defined_out": [
+        "\"vote_status\""
+      ],
+      "stack_out": [
+        "\"vote_status\""
+      ]
+    },
+    "461": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"vote_status\"",
+        "1"
+      ],
+      "stack_out": [
+        "\"vote_status\"",
+        "1"
+      ]
+    },
+    "462": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "463": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "464": {
+      "subroutine": "smart_contracts.votte.contract.Voting.vote",
+      "params": {
+        "option#0": "uint64"
+      },
+      "block": "vote",
+      "stack_in": [],
+      "op": "proto 1 0"
+    },
+    "467": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "469": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "470": {
+      "op": "bytec 7 // \"endsAt\"",
+      "defined_out": [
+        "\"endsAt\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"endsAt\""
+      ]
+    },
+    "472": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "473": {
+      "error": "check self.endsAt exists",
+      "op": "assert // check self.endsAt exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "474": {
+      "op": "<",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "475": {
+      "error": "Voting has ended",
+      "op": "assert // Voting has ended",
+      "stack_out": []
+    },
+    "476": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "478": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "479": {
+      "op": "bytec 6 // \"startsAt\"",
+      "defined_out": [
+        "\"startsAt\"",
+        "0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "0",
+        "\"startsAt\""
+      ]
+    },
+    "481": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "482": {
+      "error": "check self.startsAt exists",
+      "op": "assert // check self.startsAt exists",
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "483": {
+      "op": ">",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "484": {
+      "error": "Voting has not started",
+      "op": "assert // Voting has not started",
+      "stack_out": []
+    },
+    "485": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "option#0 (copy)"
+      ],
+      "stack_out": [
+        "option#0 (copy)"
+      ]
+    },
+    "487": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "option#0 (copy)"
+      ],
+      "stack_out": [
+        "option#0 (copy)",
+        "1"
+      ]
+    },
+    "488": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "489": {
+      "op": "bz vote_bool_false@3",
+      "stack_out": []
+    },
+    "492": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "493": {
+      "op": "bytec 5 // \"noOfOptions\"",
+      "defined_out": [
+        "\"noOfOptions\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"noOfOptions\""
+      ]
+    },
+    "495": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "496": {
+      "error": "check self.noOfOptions exists",
+      "op": "assert // check self.noOfOptions exists",
+      "stack_out": [
+        "maybe_value%2#0"
+      ]
+    },
+    "497": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "maybe_value%2#0",
+        "option#0 (copy)"
+      ]
+    },
+    "499": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "500": {
+      "op": "bz vote_bool_false@3",
+      "stack_out": []
+    },
+    "503": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "and_result%0#0"
+      ]
+    },
+    "504": {
+      "op": "b vote_bool_merge@4"
+    },
+    "507": {
+      "block": "vote_bool_false@3",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "and_result%0#0"
+      ]
+    },
+    "508": {
+      "block": "vote_bool_merge@4",
+      "stack_in": [
+        "and_result%0#0"
+      ],
+      "error": "Invalid option",
+      "op": "assert // Invalid option",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "509": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "511": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "0"
+      ]
+    },
+    "512": {
+      "op": "bytec 15 // \"localState\"",
+      "defined_out": [
+        "\"localState\"",
+        "0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "0",
+        "\"localState\""
+      ]
+    },
+    "514": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "exist#0",
+        "val#0"
+      ],
+      "stack_out": [
+        "val#0",
+        "exist#0"
+      ]
+    },
+    "515": {
+      "op": "bury 1",
+      "stack_out": [
+        "exist#0"
+      ]
+    },
+    "517": {
+      "op": "!",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "518": {
+      "error": "Already voted",
+      "op": "assert // Already voted",
+      "stack_out": []
+    },
+    "519": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "521": {
+      "op": "bytec 15 // \"localState\"",
+      "stack_out": [
+        "tmp%8#0",
+        "\"localState\""
+      ]
+    },
+    "523": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"localState\"",
+        "option#0 (copy)",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "\"localState\"",
+        "option#0 (copy)"
+      ]
+    },
+    "525": {
+      "op": "app_local_put",
+      "stack_out": []
+    },
+    "526": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "option#0 (copy)"
+      ]
+    },
+    "528": {
+      "op": "switch vote_switch_case_default@9 vote_switch_case_0@5 vote_switch_case_1@6 vote_switch_case_2@7 vote_switch_case_3@8",
+      "stack_out": []
+    },
+    "540": {
+      "op": "err"
+    },
+    "541": {
+      "block": "vote_switch_case_0@5",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "542": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "defined_out": [
+        "\"option1Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"option1Votes\""
+      ]
+    },
+    "543": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "544": {
+      "error": "check self.option1Votes exists",
+      "op": "assert // check self.option1Votes exists",
+      "stack_out": [
+        "maybe_value%4#0"
+      ]
+    },
+    "545": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "maybe_value%4#0",
+        "1"
+      ]
+    },
+    "546": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "547": {
+      "op": "bytec_1 // \"option1Votes\"",
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"option1Votes\""
+      ]
+    },
+    "548": {
+      "op": "swap",
+      "stack_out": [
+        "\"option1Votes\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "549": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "550": {
+      "op": "b vote_switch_case_next@10"
+    },
+    "553": {
+      "block": "vote_switch_case_1@6",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "554": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "defined_out": [
+        "\"option2Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"option2Votes\""
+      ]
+    },
+    "555": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "556": {
+      "error": "check self.option2Votes exists",
+      "op": "assert // check self.option2Votes exists",
+      "stack_out": [
+        "maybe_value%5#0"
+      ]
+    },
+    "557": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%5#0",
+        "1"
+      ]
+    },
+    "558": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%1#0"
+      ],
+      "stack_out": [
+        "new_state_value%1#0"
+      ]
+    },
+    "559": {
+      "op": "bytec_2 // \"option2Votes\"",
+      "stack_out": [
+        "new_state_value%1#0",
+        "\"option2Votes\""
+      ]
+    },
+    "560": {
+      "op": "swap",
+      "stack_out": [
+        "\"option2Votes\"",
+        "new_state_value%1#0"
+      ]
+    },
+    "561": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "562": {
+      "op": "b vote_switch_case_next@10"
+    },
+    "565": {
+      "block": "vote_switch_case_2@7",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "566": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "defined_out": [
+        "\"option3Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"option3Votes\""
+      ]
+    },
+    "567": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "568": {
+      "error": "check self.option3Votes exists",
+      "op": "assert // check self.option3Votes exists",
+      "stack_out": [
+        "maybe_value%6#0"
+      ]
+    },
+    "569": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "maybe_value%6#0",
+        "1"
+      ]
+    },
+    "570": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%2#0"
+      ],
+      "stack_out": [
+        "new_state_value%2#0"
+      ]
+    },
+    "571": {
+      "op": "bytec_3 // \"option3Votes\"",
+      "stack_out": [
+        "new_state_value%2#0",
+        "\"option3Votes\""
+      ]
+    },
+    "572": {
+      "op": "swap",
+      "stack_out": [
+        "\"option3Votes\"",
+        "new_state_value%2#0"
+      ]
+    },
+    "573": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "574": {
+      "op": "b vote_switch_case_next@10"
+    },
+    "577": {
+      "block": "vote_switch_case_3@8",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "578": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "defined_out": [
+        "\"option4Votes\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"option4Votes\""
+      ]
+    },
+    "580": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "581": {
+      "error": "check self.option4Votes exists",
+      "op": "assert // check self.option4Votes exists",
+      "stack_out": [
+        "maybe_value%7#0"
+      ]
+    },
+    "582": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%7#0"
+      ],
+      "stack_out": [
+        "maybe_value%7#0",
+        "1"
+      ]
+    },
+    "583": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%3#0"
+      ],
+      "stack_out": [
+        "new_state_value%3#0"
+      ]
+    },
+    "584": {
+      "op": "bytec 4 // \"option4Votes\"",
+      "stack_out": [
+        "new_state_value%3#0",
+        "\"option4Votes\""
+      ]
+    },
+    "586": {
+      "op": "swap",
+      "stack_out": [
+        "\"option4Votes\"",
+        "new_state_value%3#0"
+      ]
+    },
+    "587": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "588": {
+      "op": "b vote_switch_case_next@10"
+    },
+    "591": {
+      "block": "vote_switch_case_default@9",
+      "stack_in": [],
+      "op": "err"
+    },
+    "592": {
+      "block": "vote_switch_case_next@10",
+      "stack_in": [],
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
